@@ -1,0 +1,88 @@
+Yasuo Coach — Personal Use License
+Copyright (c) 2026 tallterminator. All rights reserved.
+
+This license covers the Yasuo Coach application ("the Software"), meaning the binaries
+and documentation published in this repository and on its Releases page. The Software is
+provided as a compiled application; its source code is not published and is not licensed
+to you.
+
+
+1. WHAT YOU MAY DO
+
+You may download, install, and run the Software on computers you own or control, for your
+own personal, non-commercial use. You may make copies for your own backup purposes.
+
+
+2. WHAT YOU MAY NOT DO
+
+You may not:
+
+  a. redistribute, publish, mirror, upload, sell, rent, lease, sublicense, or otherwise
+     make the Software available to any other person, whether or not for payment;
+
+  b. use the Software for any commercial purpose, including coaching others for payment,
+     paid streaming built around it, or use within a business or organisation;
+
+  c. modify, adapt, translate, or create derivative works of the Software;
+
+  d. reverse engineer, decompile, or disassemble the Software, or attempt to derive its
+     source code, except to the extent that applicable law expressly permits this despite
+     this limitation;
+
+  e. remove, obscure, or alter any copyright, licence, or attribution notice.
+
+No rights are granted other than those stated in section 1. All other rights are reserved
+by the copyright holder.
+
+
+3. NO AFFILIATION WITH RIOT GAMES
+
+Yasuo Coach is an independent, unofficial project. It is not created by, affiliated with,
+endorsed by, sponsored by, or approved by Riot Games, Inc.
+
+League of Legends and Riot Games are trademarks or registered trademarks of Riot Games,
+Inc. League of Legends (c) Riot Games, Inc.
+
+The Software is designed as a passive, observe-and-comment tool. It reads only Riot's
+official Live Client Data API on your own machine and images of your own screen. It does
+not read game memory, intercept network traffic, inject into or hook the game client,
+send input to the game, or infer information hidden from you. This design is described in
+docs/BOUNDARY.md.
+
+Nevertheless, whether you may use any third-party software alongside League of Legends is
+governed by Riot Games' Terms of Service and related policies, not by this licence, and
+those terms may change. YOU ARE SOLELY RESPONSIBLE for deciding whether to run the
+Software with your account, and for any consequence of that decision, including any
+action taken against your account. The copyright holder makes no representation that use
+of the Software complies with Riot Games' terms.
+
+
+4. NO WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE, AND NONINFRINGEMENT.
+
+The Software gives advice about a video game. That advice may be wrong, badly timed, or
+absent. It is not a guarantee of any outcome in any match.
+
+
+5. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE COPYRIGHT HOLDER
+BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+6. TERMINATION
+
+This licence ends automatically if you breach any of its terms. On termination you must
+stop using the Software and delete your copies.
+
+
+7. STATUTORY RIGHTS
+
+Nothing in this licence limits any right you have under applicable law that cannot be
+limited by agreement. If any provision is held unenforceable, the remaining provisions
+stay in effect.

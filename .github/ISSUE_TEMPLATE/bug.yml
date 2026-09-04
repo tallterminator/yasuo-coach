@@ -1,0 +1,87 @@
+name: Bug report
+description: Something the coach did wrong, or did not do at all
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before you file: **do not attach session screenshots** without looking at them
+        first. They are pictures of your own screen during a game and may show more than
+        you intend.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What did the coach do, and what did you expect instead?
+      placeholder: |
+        It said "recall now" while I was already at base.
+    validations:
+      required: true
+
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Output of `coach doctor`
+      description: >
+        Run `.\coach.exe doctor` from the folder holding coach.exe and paste all of it.
+        This answers most of the questions we would otherwise have to ask you.
+      render: text
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The release you installed, e.g. v0.3.0. The `build` line of `doctor` also shows it.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install
+    attributes:
+      label: How did you install it?
+      options:
+        - Installer (YasuoCoach-setup.exe)
+        - Portable zip
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 24H2
+    validations:
+      required: true
+
+  - type: input
+    id: display
+    attributes:
+      label: Resolution and display mode
+      description: Screen resolution, and whether League runs fullscreen, borderless or windowed.
+      placeholder: 2560x1440, borderless
+    validations:
+      required: true
+
+  - type: input
+    id: session
+    attributes:
+      label: Session folder name
+      description: >
+        The folder under `sessions/` for the game this happened in, e.g. 2026-09-04_182711.
+        Just the name — do not upload the folder.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Is this a boundary issue?
+      description: >
+        See docs/BOUNDARY.md. If the app appears to do something that document says it
+        never does, tick this — those are treated as serious.
+      options:
+        - label: The app appears to have crossed a stated boundary
+          required: false
