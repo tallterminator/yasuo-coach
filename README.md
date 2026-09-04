@@ -60,7 +60,7 @@ including exactly which data sources are allowed and why.
 | --- | --- |
 | **Windows** | Windows 11 developed and tested; Windows 10 should work but is unverified |
 | **League of Legends** | Installed. The coach reads `127.0.0.1:2999`, Riot's local endpoint, which is on by default |
-| **Disk** | ~250 MB — the app is ~120 MB and the bundled voice ~63 MB |
+| **Disk** | ~250 MB for the app itself (~120 MB plus a ~63 MB voice). **Recorded games are much bigger** — about 140 MB per minute, so roughly 4 GB for a 30-minute game. Recording is on by default; see [PRIVACY.md](docs/PRIVACY.md) |
 | **Speakers or headphones** | It refuses to start a game it cannot be heard in, unless you pass `--no-speak` |
 
 No Python, no admin rights, no account, and no API key for the live coach. The voice ships

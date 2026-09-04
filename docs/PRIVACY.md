@@ -42,7 +42,9 @@ player's identity before it is written to disk.
 
 - **Screenshots of your screen exist on your disk.** They are taken from your own display
   during a game, so anything else visible on screen at the time is captured too. Sessions
-  can also grow large — plan for a few hundred MB per recorded game.
+  can also grow **large**: measured at roughly **140 MB per minute**, so a 30-minute game
+  is about **4 GB**. Recording is on by default. If disk space matters to you, delete
+  sessions you have finished with.
 - **Nobody but you can see them** unless you share them yourself. If you attach a session
   to a bug report, you are choosing to publish those frames; check them first.
 - **Uninstalling does not delete your sessions.** Delete the folders yourself if you want
