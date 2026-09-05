@@ -3,6 +3,20 @@
 Releases of Yasuo Coach. Each entry describes what changed for someone using the app, not
 what changed in the code.
 
+## v0.4.1 — 2026-09-06
+
+A point release on v0.4.0, closing the last thing that still needed a command prompt.
+
+- **Build a deeper match history from the app.** One call to Riot reaches at most 20 games,
+  so a longer history is fetched in pages. The History screen now has a **Skip the newest**
+  box: sync 20, set it to 20 and sync again, then 40. Before this, that was the one job the
+  window could not do.
+
+Two files: `YasuoCoach-setup.exe` (installer, SHA-256
+`7b488a24ef9ad5e37f512bad3945fb60e4e1970e81ae712b0f600acb65c64dc5`)
+and `YasuoCoach-portable.zip` (the same app as a folder, SHA-256
+`d7f82a4d8d2b3356dc37c6beb2aef0cb6ad5ce1a4f9901f48639ae6c2989c722`).
+
 ## v0.4.0 — 2026-09-05
 
 Two files: `YasuoCoach-setup.exe` (installer, SHA-256
