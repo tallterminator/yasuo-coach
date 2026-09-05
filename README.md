@@ -23,8 +23,8 @@ games are written next to it).
 Then follow **[docs/QUICKSTART.md](docs/QUICKSTART.md)**: the preflight (`coach doctor`),
 a two-minute smoke test, and your first coached game.
 
-Current release: **v0.3.0** (2026-09-05). SHA-256 of the installer:
-`9346a96b5efa5f680268560590d1068689c7c76eeedc202793d472362d0eb80a`.
+Current release: **v0.4.0** (2026-09-05). SHA-256 of the installer:
+`9e721764f1b0c14efb4f858b8b051996ebc1ad9327df4959efb151ec3959be3f`.
 
 ---
 
