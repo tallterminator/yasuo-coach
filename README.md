@@ -20,8 +20,8 @@ Prefer a folder? **`YasuoCoach-portable.zip`** is the same app unzipped; run
 `YasuoCoach.exe` from inside it, and keep the folder somewhere you can write to (recorded
 games are written next to it).
 
-Then follow **[docs/QUICKSTART.md](docs/QUICKSTART.md)**: the preflight (`coach doctor`),
-a two-minute smoke test, and your first coached game.
+Then follow **[docs/QUICKSTART.md](docs/QUICKSTART.md)**: the preflight (which the app
+runs for you the moment it opens), a two-minute smoke test, and your first coached game.
 
 Current release: **v0.4.0** (2026-09-05). SHA-256 of the installer:
 `9e721764f1b0c14efb4f858b8b051996ebc1ad9327df4959efb151ec3959be3f`.
