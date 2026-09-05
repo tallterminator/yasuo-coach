@@ -23,8 +23,8 @@ games are written next to it).
 Then follow **[docs/QUICKSTART.md](docs/QUICKSTART.md)**: the preflight (which the app
 runs for you the moment it opens), a two-minute smoke test, and your first coached game.
 
-Current release: **v0.4.0** (2026-09-05). SHA-256 of the installer:
-`9e721764f1b0c14efb4f858b8b051996ebc1ad9327df4959efb151ec3959be3f`.
+Current release: **v0.4.1** (2026-09-06). SHA-256 of the installer:
+`7b488a24ef9ad5e37f512bad3945fb60e4e1970e81ae712b0f600acb65c64dc5`.
 
 ---
 
