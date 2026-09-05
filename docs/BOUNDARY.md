@@ -75,23 +75,27 @@ Nothing else.
 
 ---
 
-## One thing still under review
+## How directly the coach speaks — decided
 
 The project separates *technical* constraints, listed above and settled, from *how
 directly the coach phrases advice*.
 
-As a private tool used only by its author, the coach was allowed to give strategic
-direction out loud — "recall now", "do not take this fight", "push and walk to dragon" —
-while never giving mechanical input commands like "press Q now". That relaxation was
-recorded as applying because the tool was personal and unpublished, with a note that it
-**must be revisited before any public release**, since Riot's compliance surface treats
-products that dictate player decisions differently from products that highlight decisions
-and offer choices.
+The coach gives strategic direction out loud — "recall now", "don't take this fight",
+"the window to force a fight is closed" — and it names an opponent's visible loadout
+(the spells and items drawn on the scoreboard). It never gives a mechanical input
+command ("press Q now", "flash now"), and it never claims whether an opponent's spell or
+ability is available or when it comes back, because that is the hidden-state line above.
 
-That review has not happened yet, which is one of the reasons there is no download here
-yet. When a public build ships, this section will state plainly which phrasing it uses.
-Whatever is decided, none of the hard constraints above move: this is a question about
-wording, not about what the tool reads.
+That posture was first allowed for the author's private use (2026-09-02) and, on
+2026-09-05, confirmed for every build the author shares or releases. The reasoning is
+recorded in the project: Riot's compliance surface distinguishes products that dictate
+decisions from products that highlight them, and the author decided that a coach telling
+you what it would do — while reading nothing you cannot see and touching nothing — is the
+tool they want to run and to hand to friends. Whether to run any third-party tool
+alongside League of Legends is your own decision under Riot's Terms; see the README.
+
+None of the hard constraints above move with this: it is a question about wording, not
+about what the tool reads.
 
 ---
 

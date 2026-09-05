@@ -8,16 +8,23 @@ Windows only. Yasuo, mid lane, only.
 
 ---
 
-## There is no download yet
+## Install
 
-**This repository has no release.** The app is real and works on its author's machine, but
-the packaged installer has not yet been confirmed reading a live game end to end, and
-shipping a coach that silently says nothing would be worse than shipping late.
+Download **`YasuoCoach-setup.exe`** from the newest entry on the
+[Releases](../../releases) page and run it. No admin rights (it installs under your user
+profile), no Python, no other downloads: the voice is bundled. Windows may show a
+SmartScreen prompt because the installer is unsigned; choose **More info**, then **Run
+anyway**.
 
-When that check passes, `YasuoCoach-setup.exe` will appear on the
-[Releases](../../releases) page and this section will say so instead.
+Prefer a folder? **`YasuoCoach-portable.zip`** is the same app unzipped; run
+`YasuoCoach.exe` from inside it, and keep the folder somewhere you can write to (recorded
+games are written next to it).
 
-Watch the repository if you want to know when that happens.
+Then follow **[docs/QUICKSTART.md](docs/QUICKSTART.md)**: the preflight (`coach doctor`),
+a two-minute smoke test, and your first coached game.
+
+Current release: **v0.3.0** (2026-09-05). SHA-256 of the installer:
+`9346a96b5efa5f680268560590d1068689c7c76eeedc202793d472362d0eb80a`.
 
 ---
 
