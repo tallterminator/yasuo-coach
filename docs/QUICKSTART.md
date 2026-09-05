@@ -3,7 +3,6 @@
 Getting from a clean Windows install to a coached game. About 15 minutes, most of it a
 download.
 
-
 ---
 
 ## What you need
@@ -39,10 +38,13 @@ Windows may show a SmartScreen prompt because the installer is unsigned: choose
 **If someone sent you `YasuoCoach-setup.exe` directly**, run it the same way. It needs
 Windows 10 or 11 and the League client on the same PC, nothing else. The coach only reads Riot's local Live Client Data API on your own machine
 and sends nothing anywhere. Recordings of your games stay in a `sessions/` folder on your
-own disk and are large — about 3 GB per 30-minute game — so keep an eye on the drive, and
-delete the folder whenever you like; the coach never needs it again.
+own disk and are large — about 3 GB per 30-minute game — so keep an eye on the drive.
+**Sessions → Disk** measures what they occupy and reclaims the screenshots of older
+games on request, keeping everything grading and analysis read; or delete the folder
+yourself whenever you like, since the coach never needs it again.
 
-Both give you the same four screens: **Play**, **Live**, **Sessions**, **Settings**.
+Both give you the same screens: **Play**, **Sessions**, **History** and **Settings**,
+plus a developer **Live** dashboard that is off until you turn it on in Settings.
 
 > Recorded games are written to a `sessions/` folder next to wherever the coach runs, so
 > put the portable folder somewhere you can write to — not `C:\Program Files`.
@@ -82,13 +84,15 @@ published at **huggingface.co/rhasspy/piper-voices**, arranged by language
 
 ## Step 3 — Run the preflight
 
-Before your first game, from the folder holding `coach.exe`:
+Open the app and go to the **Play** screen: the six checks run themselves and sit above the
+Start button. **Settings → Preflight** has the same panel with a Check button, and from the
+folder holding `coach.exe` the terminal form still works:
 
 ```powershell
 .\coach.exe doctor
 ```
 
-Six checks. Here is what the answers mean:
+Six checks, wherever you read them. Here is what the answers mean:
 
 | Check | What you want | If it isn't that |
 | --- | --- | --- |
@@ -138,14 +142,15 @@ writes the closing stamp; a session without one has to be repaired afterwards wi
 
 ## Step 5 — Grade what it said
 
-This is the part that makes the coach better, and it is the project's own gate:
+This is the part that makes the coach better, and it is the project's own gate.
 
-```powershell
-.\coach.exe grade sessions\<your-session>
-```
+In the app: **Sessions**, pick the game, **Grade this game**. Every line it spoke appears
+with its clock, and you answer two questions per line — was it fair, was it useful. A
+wrong click is not permanent: **Change** reopens an answer and records a correction beside
+the first one. **Grading status** and **Assemble grades** are at the bottom of the list.
 
-You mark each spoken cue fair/useful. Print the review sheet the app ships with
-first — it is the sheet to grade against. `coach grade-status` shows how much is done.
+The terminal form is `.\coach.exe grade sessions\<your-session>`, and prints
+the review sheet the app ships with as the sheet to grade against.
 
 Nothing about the coach can be tuned honestly until cues are graded, because until then
 nobody has told it which of its lines were worth hearing.
@@ -157,11 +162,15 @@ nobody has told it which of its lines were worth hearing.
 Separate from the live coach and never touching it. It reads your finished games from
 Riot's public match API to find patterns across games.
 
-Get a personal API key from `developer.riotgames.com`, then:
+It is the **History** screen: paste a personal API key from `developer.riotgames.com` into
+the box, press **Sync my games**, then read the results under "Across your own games". The
+key is held in that window only — never written to disk — and cleared once a sync succeeds.
+
+The same thing from a terminal:
 
 ```powershell
 $env:RIOT_API_KEY = "RGAPI-..."
-.\coach.exe sync --count 20 --timelines --queue 420
+.\coach.exe sync --riot-id "GameName#TAG" --count 20 --timelines --queue 420
 .\coach.exe analysis baseline
 ```
 
@@ -207,5 +216,3 @@ Create `%USERPROFILE%\.yasuo_mid_coach\voice.json`:
 | `doctor` says regions are "scaled from 1080p" | Nobody has measured the HUD at your resolution, so the 1080p rectangles are resized. Correct behaviour — see step 3. |
 | A session has no `ended_at` | It was closed by killing the window. Repair with `coach close-session <path>`. |
 | The app opens but the Live screen is blank | The dashboard serves on `127.0.0.1:7878` only once a game is running. |
-
----
