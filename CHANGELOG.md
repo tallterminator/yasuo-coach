@@ -3,6 +3,33 @@
 Releases of Yasuo Coach. Each entry describes what changed for someone using the app, not
 what changed in the code.
 
+## v0.4.2 — 2026-09-06
+
+Three things the coach was getting wrong in a real game, each found by playing one and then
+measured against the recording.
+
+- **It no longer says your opponent is at base while they are standing in front of you.**
+  League's own data feed does not tell an app what an enemy bought at the moment they buy
+  it — it reveals their items when your team can see them again. The coach was reading that
+  reveal as a fresh purchase and calling "they just bought, they're at base, shove now" at
+  the exact moment they walked back into lane. That call is gone for good. For the same
+  reason the item warning no longer claims an opponent *just finished* something: it says
+  what they have — "Malzahar has Blackfire Torch" — which is the part their loadout can
+  actually prove, and the part the advice hangs on.
+- **Objective calls now come 45 to 30 seconds before the spawn**, instead of a minute and a
+  half. Every objective line in the measured game spoke at exactly 90 seconds — far enough
+  out that the wave you were told to push had come and gone by the time it mattered. A call
+  that cannot be made inside that window is no longer made at all.
+- **The panels you read can be resized, and stay resized.** Drag the bottom edge of the
+  coach output, the list of what was said this game, or any of the analysis, sessions,
+  history and cleanup panes. The app reopens each one the size you left it. The coach output
+  in particular used to shrink to a few lines whenever anything else was on the screen.
+
+Two files: `YasuoCoach-setup.exe` (installer, SHA-256
+`bf65167d391f3021bc404d1157cd9d4adb6596b80c08abeec38d6f2ce8ab91fa`)
+and `YasuoCoach-portable.zip` (the same app as a folder, SHA-256
+`a74746873ec00319ff8cd39e24dfe61e4329d05d5e773d083d09e04e4ecc763d`).
+
 ## v0.4.1 — 2026-09-06
 
 A point release on v0.4.0, closing the last thing that still needed a command prompt.
