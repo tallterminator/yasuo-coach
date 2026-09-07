@@ -23,8 +23,8 @@ games are written next to it).
 Then follow **[docs/QUICKSTART.md](docs/QUICKSTART.md)**: the preflight (which the app
 runs for you the moment it opens), a two-minute smoke test, and your first coached game.
 
-Current release: **v0.4.2** (2026-09-06). SHA-256 of the installer:
-`bf65167d391f3021bc404d1157cd9d4adb6596b80c08abeec38d6f2ce8ab91fa`.
+Current release: **v0.5.0** (2026-09-07). SHA-256 of the installer:
+`0dd3350d467480aff253de5c43eb78ba6ce7ace15767b3bf107de534faec70be`.
 
 ---
 
@@ -35,7 +35,8 @@ what is happening, and speaks when it has something worth saying:
 
 - **Lane state** — who you are actually up against (decided from the kill feed, not from
   the champion select label, because champions go anywhere now), level races, trading
-  windows, when the enemy laner has walked to base
+  windows, which summoner spells they brought, and when one of them is fed enough to
+  change how you play the lane
 - **Map and objectives** — dragon and herald timers anchored to the clock, when to shove
   and move, when a fight is not yours to take
 - **Deaths** — what happened, once, after the fight rather than during it
