@@ -3,6 +3,63 @@
 Releases of Yasuo Coach. Each entry describes what changed for someone using the app, not
 what changed in the code.
 
+## v0.5.0 — 2026-09-07
+
+The largest change to what the coach actually says since it started speaking. Eighteen new
+things it can tell you, and four things it used to get wrong.
+
+**New calls.** Every one of these is built only from what is already on your screen or in
+Riot's own data feed for your own team.
+
+- **When the enemy is a player down.** Two or more enemies dead on the scoreboard at once is
+  the window most games are decided in, and the coach now names it and says what to take.
+- **Who on your team can knock up.** Yasuo's ultimate needs someone else to start it, so at
+  the first opportunity the coach names the champions on your team who can — from a table of
+  32 — instead of leaving you to remember.
+- **A fed enemy, named once.** At 3, 6 and 9 kills clear of their deaths, the coach names the
+  threat and tells you how to play around that specific one. Once per enemy per game: a 3-0
+  and a 9-0 no longer get the same sentence twice.
+- **A fed ally is a lever, not a warning.** The same read, pointed the other way — when a
+  teammate is ahead, that is a resource, and it is said in a tone that reflects it.
+- **Your Flash being down.** Read from your own summoner spell going dark, with advice that
+  changes depending on how long you have left without it.
+- **What your lane opponent brought.** Said once: which two summoner spells they picked, and
+  what that means for how you trade. It never claims whether a spell is *up* — the data feed
+  carries no such thing for anyone, and inferring it is exactly the line this app does not
+  cross.
+- **Your lane opponent turning up somewhere else.** If they help kill someone in another
+  lane, you hear it, along with what their absence is worth to you.
+- Plus objective windows that wait for two facts instead of one, a level-6 call that closes
+  when the window does, and several lines that stopped hedging and now say the thing.
+
+**Fixes, all of them found by reading what the coach actually said over 25 recorded games.**
+
+- **Herald is no longer offered after it has left the map.** An uncontested Herald counted as
+  "still up" forever, so the coach was still suggesting you group for it at 23 minutes.
+- **You are no longer told to go back twice.** Two different rules could each send you to
+  base about the same recall; they now share one and only one speaks.
+- **Every gold line fits in a breath on any champion.** On champions other than Yasuo the
+  gold advice ran nineteen and twenty-three words — over the limit the coach holds itself to
+  — for as long as that limit has existed, because only the Yasuo branch was ever checked.
+- **The coach no longer calls a Viego by whoever he last killed.** Riot's feed reports the
+  champion Viego is currently wearing, so in one recorded game a single enemy was announced
+  as Viego, Zyra, Vladimir, Graves, Aphelios and Yasuo in turn — four of those names belonging
+  to your own team. The coach now keys each player to a stable identity, which fixed the same
+  bug in all seven places it could appear.
+- **The Play screen no longer opens with a red error.** Every launch showed "the sessions
+  folder cannot be the root of a drive" because the preflight ran before the app had finished
+  loading its settings — and, worse, the seven checks then never ran at all.
+
+**One thing that got quieter, deliberately.** Generic lines are now superseded by specific
+ones wherever both apply: over the same 25 recordings, 66 broad "set up for the objective" or
+"their jungler is down" lines gave way to something that named the situation instead.
+
+Two files: `YasuoCoach-setup.exe` (installer, SHA-256
+`0dd3350d467480aff253de5c43eb78ba6ce7ace15767b3bf107de534faec70be`)
+and `YasuoCoach-portable.zip` (the same app as a folder, SHA-256
+`cde9f4cf07a63aaf1ad0c491d66eb2eb187dd16133c60874dff2d9f88d12164c`).
+These are the exact bytes of a game played before publishing, not a rebuild of them.
+
 ## v0.4.2 — 2026-09-06
 
 Three things the coach was getting wrong in a real game, each found by playing one and then
